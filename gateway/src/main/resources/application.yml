@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: gateway-service
+
+  config: #fallback if not able to load from config server directly.
+    import: optional:configserver:http://localhost:8888
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka
+#
+#server:
+#  port: 8080

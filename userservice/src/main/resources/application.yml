@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: user-service #name should be same as file name of configserver/resources/config/files....
+
+
+  config: #fallback if not able to load from config server directly.
+    import: optional:configserver:http://localhost:8888

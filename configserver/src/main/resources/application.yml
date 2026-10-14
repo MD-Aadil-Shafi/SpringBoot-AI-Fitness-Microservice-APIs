@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: configserver
+#    to pick config folder in resources
+  profiles:
+    active: native #instead of native can use git repo
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+
+server:
+  port: 8888
+

@@ -1,0 +1,8 @@
+**/target/
+*.class
+*.jar
+*.war
+.idea/
+lombok.md
+.env
+docker-compose.yml
